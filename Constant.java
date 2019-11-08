@@ -1,4 +1,4 @@
-package cn.sxt.game;
+package cn.sxt.game; //the package can be changed as you like
 
 public class Constant {
     public static final int Game_Width =  500;
