@@ -8,6 +8,7 @@ public class Explode {
     static {
         for(int i=0;i<16;i++){
             imgs[i] = GameUtil.getImage("images/explode/e"+(i)+".gif"); // 这里gif格式很重要！！！
+            // it's very improtant to use gif form
             imgs[i].getWidth(null);
             imgs[i].getHeight(null);
         }
