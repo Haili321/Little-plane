@@ -4,7 +4,7 @@ import java.awt.*;
 
 /**
  * 游戏物体的父类
- *
+ *store the object(the parents)
  *
  */
 public class GameObject {
@@ -13,7 +13,7 @@ public class GameObject {
     int speed,width,height;
 
 
-    public void drawSelf(Graphics pen){
+    public void drawSelf(Graphics pen){ 
         pen.drawImage(img,(int)x,(int)y,null);
     }
 
@@ -26,7 +26,7 @@ public class GameObject {
         this.height = height;
     }
 
-    public GameObject(Image img, double x, double y) {
+    public GameObject(Image img, double x, double y) {// different construction can deal with different situation
         this.img = img;
         this.x = x;
         this.y = y;
@@ -34,7 +34,7 @@ public class GameObject {
     public GameObject(){
 
     }
-    public Rectangle getRect(){
+    public Rectangle getRect(){ 
         return new Rectangle((int)x,(int)y,width,height);
     }
 
